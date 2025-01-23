@@ -1,0 +1,205 @@
+{
+    "Header": {
+        "Motor6Ds": {
+            "Left Shoulder": {
+                "Part0": "Torso",
+                "Part1": "Left Arm",
+                "C1": [
+                    0.5, 0.5,0,
+                    0, 0, -1,
+                    0, 1, 0,
+                    1, 0, 0
+                ],
+                "C0": [
+                    -1, 0.5, 0,
+                    0, 0, -1,
+                    0, 1, 0,
+                    1, 0, 0
+                ]
+            },
+            "Right Shoulder": {
+                "Part0": "Torso",
+                "Part1": "Right Arm",
+                "C1": [
+                    -0.5, 0.5,0,
+                    0, 0, 1,
+                    0, 1, 0,
+                    -1, 0, 0
+                ],
+                "C0": [
+                    1, 0.5, 0,
+                    0, 0, 1,
+                    0, 1, 0,
+                    -1, 0, 0
+                ]
+            },
+            "Neck": {
+                "Part0": "Torso",
+                "Part1": "Head",
+                "C1": [
+                    0, -0.5,0,
+                    -1, 0, 0,
+                    0, 0, 1,
+                    0, 1, 0
+                ],
+                "C0": [
+                    0, 1, 0,
+                    -1, 0, 0,
+                    0, 0, 1,
+                    0, 1, 0
+                ]
+            },
+            "Right Hip": {
+                "Part0": "Torso",
+                "Part1": "Right Leg",
+                "C1": [
+                    0.5, 1,0,
+                    0, 0, 1,
+                    0, 1, 0,
+                    -1, 0, 0
+                ],
+                "C0": [
+                    1, -1, 0,
+                    0, 0, 1,
+                    0, 1, 0,
+                    -1, 0, 0
+                ]
+            },
+            "Left Hip": {
+                "Part0": "Torso",
+                "Part1": "Left Leg",
+                "C1": [
+                    -0.5, 1,0,
+                    0, 0, -1,
+                    0, 1, 0,
+                    1, 0, 0
+                ],
+                "C0": [
+                    -1, -1, 0,
+                    0, 0, -1,
+                    0, 1, 0,
+                    1, 0, 0
+                ]
+            },
+            "RootJoint": {
+                "Part0": "HumanoidRootPart",
+                "Part1": "Torso",
+                "C1": [
+                    0, 0,0,
+                    -1, 0, 0,
+                    0, 0, 1,
+                    0, 1, 0
+                ],
+                "C0": [
+                    0, 0, 0,
+                    -1, 0, 0,
+                    0, 0, 1,
+                    0, 1, 0
+                ]
+            }
+        },
+    "RigName": "Rig",
+    "Parts": [
+        "Head",
+        "Torso",
+        "Left Arm",
+        "Right Arm",
+        "Left Leg",
+        "Right Leg",
+        "HumanoidRootPart"
+    ],
+    "Sizes": {
+        "Head": [2,1,1],
+        "Torso": [2,2,1],
+        "Left Arm": [1,2,1],
+        "Right Arm": [1,2,1],
+        "Left Leg": [1,2,1],
+        "Right Leg": [1,2,1],
+        "HumanoidRootPart": [2,2,1]
+    },
+    "RootPart": "HumanoidRootPart",
+    "Loop": false,
+    "Priority": "Action",
+    "FPS": 60
+    },
+    "KeyframeSequence": {
+        "0": {
+            "HumanoidRootPart": {
+                "CFrame": 0,
+                "Part0":"HumanoidRootPart",
+                "Part1":"Torso",
+                "Weight": 0,
+                "EasingDirection": "In",
+                "EasingStyle": "Linear"
+            },
+            "Torso": {
+                "CFrame": 0,
+                "Part0":"Torso",
+                "Part1":"Left Arm",
+                "Weight": 0,
+                "EasingDirection": "In",
+                "EasingStyle": "Linear"
+            },
+            "Left Arm": {
+                "CFrame": 0,
+                "Weight": 0,
+                "EasingDirection": "In",
+                "EasingStyle": "Linear"
+            }
+        },
+        "0.233": {
+            "HumanoidRootPart": {
+                "CFrame": 0,
+                "Part0":"HumanoidRootPart",
+                "Part1":"Torso",
+                "Weight": 0,
+                "EasingDirection": "In",
+                "EasingStyle": "Linear"
+            },
+            "Torso": {
+                "CFrame": 0,
+                "Part0":"Torso",
+                "Part1":"Left Arm",
+                "Weight": 0,
+                "EasingDirection": "In",
+                "EasingStyle": "Linear"
+            },
+            "Left Arm": {
+                "CFrame":   [0, 0, 0,
+                            -0.19781357, 0.98023963, 0,
+                            -0.98023963, -0.19781357, 0,
+                            0, 0, 1],
+                "Weight": 0,
+                "EasingDirection": "In",
+                "EasingStyle": "Linear"
+            },
+            "0.5": {
+                "HumanoidRootPart": {
+                    "CFrame": 0,
+                    "Part0":"HumanoidRootPart",
+                    "Part1":"Torso",
+                    "Weight": 0,
+                    "EasingDirection": "In",
+                    "EasingStyle": "Linear"
+                },
+                "Torso": {
+                    "CFrame": 0,
+                    "Part0":"Torso",
+                    "Part1":"Left Arm",
+                    "Weight": 0,
+                    "EasingDirection": "In",
+                    "EasingStyle": "Linear"
+                },
+                "Left Arm": {
+                    "CFrame":   [-0.426169366, 0.277641922, 0.421041906,
+                                0.169891059, -0.0406228825, 0.98462534,
+                                -0.98141402, 0.0835052133, 0.172782063,
+                                -0.0892400444, -0.995679259, -0.0256807953],
+                    "Weight": 0,
+                    "EasingDirection": "In",
+                    "EasingStyle": "Linear"
+                }
+            }
+        }
+    }
+}

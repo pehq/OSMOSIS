@@ -1,6 +1,7 @@
 # Blender 4.3.2
 # www.blender.org
 mtllib BasicRigR6.mtl
+osmlib Basic_Animation.OSMPLY.json
 g Head
 v 0.293904 0.921670 0.293904
 v 0.246242 0.898788 0.172421
