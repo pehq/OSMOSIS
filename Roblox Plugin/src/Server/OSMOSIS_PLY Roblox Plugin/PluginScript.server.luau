@@ -12,17 +12,17 @@ local toolbarButton:PluginToolbarButton = toolbar:CreateButton("OSMOSIS-PLY", "U
 local RigToTable = require(Modules.RigToTable)
 
 local function sendJSON(json)
-	local url = "http://127.0.0.1:5000/process_json" -- Replace with your server's URL
+	local url = "http://127.0.0.1:5000/process_json"
 
-	-- Send the POST request
+	--POST request
 	local success, response = pcall(function()
 		return HttpService:RequestAsync({
 			Url = url,
 			Method = "POST",
 			Headers = {
-				["Content-Type"] = "application/json", -- Specify JSON content type
+				["Content-Type"] = "application/json",
 			},
-			Body = json, -- Send the JSON string
+			Body = json,
 		})
 	end)
 
@@ -36,12 +36,12 @@ end
 
 local function OnClick()
 	local selected = Selection:Get()
-	local Model = selected[1] 
-	if Model:IsA("Model") == false then
-		return
+	local Model, Anim = selected[1], selected[2] 
+	if Model:IsA("Model") == false or Anim:IsA("KeyframeSequence") == false then
+		return warn("Not sent, check selection!")
 	end
 	
-	local Json = HttpService:JSONEncode(RigToTable.Tablefy(Model))
+	local Json = HttpService:JSONEncode(RigToTable.Tablefy(Model, Anim))
 	sendJSON(Json)
 end
 

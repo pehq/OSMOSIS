@@ -26,21 +26,51 @@ local function CheckIfModelIsGood(Model:Model)
 	end
 end
 
-function Tablefy.Tablefy(Model:Model)
+function Tablefy.Tablefy(Model:Model, KeyframeSequence:KeyframeSequence)
 	CheckIfModelIsGood(Model) --> don't be dumb
 	
+	local Progress, MaxProgress = 0, #Model:GetChildren() + #Model:GetDescendants() + (KeyframeSequence ~= nil and #KeyframeSequence:GetDescendants() or 0) + 1
+	
+	local DominantPart = nil
+	for i, v:BasePart in ipairs(Model:GetChildren()) do
+		task.wait(); Progress += 1; print(Progress.. "/".. MaxProgress);
+
+		if v:IsA("BasePart") == false then
+			continue
+		end
+		if v.Name == "HumanoidRootPart" then
+			DominantPart = v
+			break
+		end
+		if DominantPart == nil then
+			DominantPart = v
+		elseif v.RootPriority > DominantPart.RootPriority then
+			DominantPart = v
+		end
+	end
+	Progress = #Model:GetChildren()
+	
 	local TableResult = {
-		Name = Model.Name,
-		Parts = {},
-		Motor6Ds = {},
-		KeyframeSequence = Model:FindFirstChild("AnimSaves") and {} or nil
+		["Header"] = {
+			["Motor6Ds"] = {},
+			["RigName"] = Model.Name,
+			["Parts"] = {},
+			["RootPart"] = DominantPart,
+			["FPS"] = 60
+		},
+		["KeyframeSequence"] = KeyframeSequence and {} or nil
 	}
 	
 	for i, v in pairs(Model:GetDescendants()) do
+		task.wait(); Progress += 1; print(Progress.. "/".. MaxProgress);
+		
 		if v:IsA("BasePart") then
-			table.insert(TableResult.Parts, v.Name)
+			TableResult.Header.Parts[v.Name] = {
+				["CFrame"] = {v.CFrame:GetComponents()},
+				["Size"] = {v.Size.X, v.Size.Y, v.Size.Z},
+			}
 		elseif v:IsA("Motor6D") then
-			TableResult.Motor6Ds[v.Name] = {
+			TableResult.Header.Motor6Ds[v.Name] = {
 				Part0 = v.Part0.Name,
 				Part1 = v.Part1.Name,
 				C0 = {v.C0:GetComponents()},
@@ -49,44 +79,27 @@ function Tablefy.Tablefy(Model:Model)
 		end
 	end
 	
-	if TableResult.KeyframeSequence ~= nil then
-		local KeyframeSequenceList = {}
+	if TableResult.KeyframeSequence == nil then
+		return TableResult
+	end
+
+	for j, Keyframe in ipairs(KeyframeSequence:GetChildren()) do
+		task.wait(); Progress += 1; print(Progress.. "/".. MaxProgress);
 		
-		local AnimSavesContainer = Model:FindFirstChild("AnimSaves")
-		local AnimSavesKeys = AnimSavesContainer:GetChildren()
-		table.move(AnimSavesKeys, 1, #AnimSavesKeys, #KeyframeSequenceList + 1, KeyframeSequenceList)
-		if AnimSavesContainer:IsA("ObjectValue") then
-			local AnimSavesKeys = AnimSavesContainer:GetChildren()
-			table.move(AnimSavesKeys, 1, #AnimSavesKeys, #KeyframeSequenceList + 1, KeyframeSequenceList)
-		end
-		
-		for i, v:KeyframeSequence in ipairs(KeyframeSequenceList) do
-			print(string.format("%i / %i", i, #KeyframeSequenceList)); task.wait();
-			
-			TableResult.KeyframeSequence[v.Name] = {
-				Loop = v.Loop,
-				Priority = v.Priority.Name,
-				Keyframes = {}
-			}
-			for j, Keyframe in ipairs(v:GetChildren()) do
-				TableResult.KeyframeSequence[v.Name].Keyframes[j] = {
-					Poses = {},
-					Time = Keyframe.Time,
-				}
-				for k, Pose:Pose in ipairs(Keyframe:GetDescendants()) do
-					if Pose:IsA("Pose") == false then
-						continue
-					end
-					TableResult.KeyframeSequence[v.Name].Keyframes[j].Poses[Pose.Name] = {
-						["CFrame"] = {Pose.CFrame:GetComponents()},
-						EasingDirection = Pose.EasingDirection.Name,
-						EasingStyle = Pose.EasingStyle.Name,
-						Weight = Pose.Weight, -- ???
-						Part0 = Pose.Parent.Name,
-						Part1 = Pose.Name
-					}
-				end
+		TableResult.KeyframeSequence[Keyframe.Time] = {}
+		for k, Pose:Pose in ipairs(Keyframe:GetDescendants()) do
+			task.wait(); Progress += 1; print(Progress.. "/".. MaxProgress);
+
+			if Pose:IsA("Pose") == false then
+				continue
 			end
+			TableResult.KeyframeSequence[Keyframe.Time][Pose.Name] = {
+				["CFrame"] = {Pose.CFrame:GetComponents()},
+				["Part0"] = Pose.Name ~= Model.PrimaryPart and Pose.Parent.Name or nil,
+				["Part1"] = Pose.Name ~= Model.PrimaryPart and Pose.Name or nil,
+				["EasingDirection"] = Pose.EasingDirection.Name,
+				["EasingStyle"] = Pose.EasingStyle.Name,
+			}
 		end
 	end
 	
