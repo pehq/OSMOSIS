@@ -4,7 +4,8 @@ bl_info = {
     "category": "Object",
 }
 
-import bpy, bpy_extras, json
+import bpy, bpy_extras, json, mathutils
+from mathutils import Vector, Matrix
 
 transform_to_blender = bpy_extras.io_utils.axis_conversion(
     from_forward="Z", from_up="Y", to_forward="-Y", to_up="Z"
@@ -17,7 +18,6 @@ with open("C:\DRIVE\Documents\Operation for Stop Motion of Swinging Interconnect
 
 # Print the data
 print(data)
-
 
 # utilities
 # y-up cf -> y-up mat
@@ -46,11 +46,33 @@ def mat_to_cf(mat):
     ]
     return r_mat
 
+Motor6Ds = data["Header"]["Motor6Ds"]
+Motor6DsLocMat = {}
+for i in Motor6Ds:
+    Motor6DsLocMat[i] = {
+        "C0": cf_to_mat(Motor6Ds[i]["C0"]),
+        "C1": cf_to_mat(Motor6Ds[i]["C1"])    
+    }
+    
+for i in Motor6DsLocMat:
+    print(i ,Motor6DsLocMat[i])
+
+Motor6DsCFBack = {}
+for i in Motor6DsLocMat:
+    Motor6DsCFBack[i] = {
+        "C0": mat_to_cf(Motor6DsLocMat[i]["C0"]),
+        "C1": mat_to_cf(Motor6DsLocMa[i]["C1"])    
+    }
+
+for i in Motor6DsCFBack:
+    print(i ,Motor6DsCFBack[i])
+
+Motor6Ds = data
 # TODO: Function for getting position of Motor6D Joint
     # Note that:
     # C0 is the offset of Part0 from Part1
     # C1 is the negative offset of Part0 from Part1
-    # C0 is added to Part0’s CFrame, C1 is subtracted from Part0’s CFrame
+    # C0 is added to Part0’s CFrame, C1 is subtracted from Part0’s CFrame ???
 
 # Use this to import the obj: https://docs.blender.org/api/current/bpy.ops.wm.html#bpy.ops.wm.obj_import
     # https://stackoverflow.com/questions/77807142/attributeerror-calling-operator-bpy-ops-import-scene-obj-error-could-not-be
@@ -66,7 +88,7 @@ def mat_to_cf(mat):
     # new_bone.head = mathutils.Vector((0, 0, 0))  # Start position
     # new_bone.tail = mathutils.Vector((0, 0, 2))  # End position (2 units above the head)
 
-# Create Keyframes...
+# Create and load Keyframes...
 
 def register():
     print("registered")
