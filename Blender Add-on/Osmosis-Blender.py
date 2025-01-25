@@ -13,11 +13,11 @@ transform_to_blender = bpy_extras.io_utils.axis_conversion(
 identity_cf = [0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1]  # identity CF components matrix
 
 # Open and read the JSON file
-with open("C:\DRIVE\Documents\Operation for Stop Motion of Swinging Interconnected Systems - Pieces of Legos Yodeling\FIle Format\Basic_Animation.OSMPLY.json", 'r') as file:
-    data = json.load(file)
+with open("C:\DRIVE\Documents\Operation for Stop Motion of Swinging Interconnected Systems - Pieces of Legos Yodeling\FIle Format\output.json", 'r') as file:
+    Json_data = json.load(file)
 
 # Print the data
-print(data)
+print(Json_data)
 
 # utilities
 # y-up cf -> y-up mat
@@ -46,28 +46,55 @@ def mat_to_cf(mat):
     ]
     return r_mat
 
-Motor6Ds = data["Header"]["Motor6Ds"]
-Motor6DsLocMat = {}
-for i in Motor6Ds:
-    Motor6DsLocMat[i] = {
-        "C0": cf_to_mat(Motor6Ds[i]["C0"]),
-        "C1": cf_to_mat(Motor6Ds[i]["C1"])    
-    }
+y_to_z = Matrix(((1, 0,  0, 0),
+                 (0, 0, -1, 0),
+                 (0, 1,  0, 0),
+                 (0, 0,  0, 1)))
+
+def RotateMat180(Mat):
+    # Create a 180° rotation matrix around the Y-axis
+    rotation_y_180 = Matrix.Rotation(math.radians(180), 4, 'Y')
     
-for i in Motor6DsLocMat:
-    print(i ,Motor6DsLocMat[i])
+    # Apply the rotation by multiplying the matrices
+    rotated_matrix = rotation_y_180 @ original_matrix
 
-Motor6DsCFBack = {}
-for i in Motor6DsLocMat:
-    Motor6DsCFBack[i] = {
-        "C0": mat_to_cf(Motor6DsLocMat[i]["C0"]),
-        "C1": mat_to_cf(Motor6DsLocMa[i]["C1"])    
-    }
+    return rotated_matrix
 
-for i in Motor6DsCFBack:
-    print(i ,Motor6DsCFBack[i])
+Join_Pos = {}
+Motor6Ds = Json_data["Header"]["Motor6Ds"]
+Part0Mats = {}
+for i in Motor6Ds:
+    Part0Mats[i] = cf_to_mat(Json_data["Header"]["Parts"][Motor6Ds[i]["Part0"]]["CFrame"]) @ cf_to_mat(Motor6Ds[i]["C0"])
 
-Motor6Ds = data
+print(Part0Mats)
+
+# Create an armature
+armature_data = bpy.data.armatures.new("MyArmature")
+armature_object = bpy.data.objects.new("MyArmatureObject", armature_data)
+bpy.context.scene.collection.objects.link(armature_object)
+
+# Set the armature as the active object and enter Edit Mode
+bpy.context.view_layer.objects.active = armature_object
+bpy.ops.object.mode_set(mode='EDIT')
+
+# Iterate through the dictionary
+for joint_name, matrix in Part0Mats.items():
+    # Convert the Y-up matrix to Z-up
+    z_up_matrix = y_to_z @ matrix
+
+    # Extract the position and direction from the matrix
+    head_position = z_up_matrix.translation  # Bone head is at the matrix translation
+    direction = z_up_matrix @ Vector((0, 0, 1)) - head_position  # Local Z-axis
+
+    # Create a new bone
+    bone = armature_data.edit_bones.new(joint_name)
+    bone.head = head_position
+    bone.tail = head_position + direction.normalized()  # Extend outward by 1 unit
+
+# Exit Edit Mode
+bpy.ops.object.mode_set(mode='OBJECT')
+
+
 # TODO: Function for getting position of Motor6D Joint
     # Note that:
     # C0 is the offset of Part0 from Part1
