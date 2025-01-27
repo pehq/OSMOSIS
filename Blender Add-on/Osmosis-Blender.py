@@ -4,7 +4,7 @@ bl_info = {
     "category": "Object",
 }
 
-import bpy, bpy_extras, json, mathutils
+import bpy, bpy_extras, json, mathutils, math
 from mathutils import Vector, Matrix
 
 transform_to_blender = bpy_extras.io_utils.axis_conversion(
@@ -13,7 +13,7 @@ transform_to_blender = bpy_extras.io_utils.axis_conversion(
 identity_cf = [0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1]  # identity CF components matrix
 
 # Open and read the JSON file
-with open("C:\DRIVE\Documents\Operation for Stop Motion of Swinging Interconnected Systems - Pieces of Legos Yodeling\FIle Format\output.json", 'r') as file:
+with open("C:\DRIVE\Documents\Operation for Stop Motion of Swinging Interconnected Systems - Pieces of Legos Yodeling\Server\output.json", 'r') as file:
     Json_data = json.load(file)
 
 # Print the data
@@ -51,14 +51,7 @@ y_to_z = Matrix(((1, 0,  0, 0),
                  (0, 1,  0, 0),
                  (0, 0,  0, 1)))
 
-def RotateMat180(Mat):
-    # Create a 180° rotation matrix around the Y-axis
-    rotation_y_180 = Matrix.Rotation(math.radians(180), 4, 'Y')
-    
-    # Apply the rotation by multiplying the matrices
-    rotated_matrix = rotation_y_180 @ original_matrix
-
-    return rotated_matrix
+rotation_y_180 = Matrix.Rotation(math.radians(180), 4, 'Y')
 
 Join_Pos = {}
 Motor6Ds = Json_data["Header"]["Motor6Ds"]
@@ -77,6 +70,9 @@ bpy.context.scene.collection.objects.link(armature_object)
 bpy.context.view_layer.objects.active = armature_object
 bpy.ops.object.mode_set(mode='EDIT')
 
+# Dictionary to store created bones for parenting
+created_bones = {}
+
 # Iterate through the dictionary
 for joint_name, matrix in Part0Mats.items():
     # Convert the Y-up matrix to Z-up
@@ -91,9 +87,71 @@ for joint_name, matrix in Part0Mats.items():
     bone.head = head_position
     bone.tail = head_position + direction.normalized()  # Extend outward by 1 unit
 
+    # Store the bone in the dictionary
+    created_bones[joint_name] = bone
+
+# Access all bones in Edit Mode
+edit_bones = armature_object.data.edit_bones
+print(edit_bones)
+RootPart = Json_data["Header"]["RootPart"]
+# Find the Root Bone
+for bone in edit_bones:
+    if bone.name in Motor6Ds and Motor6Ds[bone.name]["Part0"] == RootPart:
+        Root_Bone = bone
+        break
+
+
+for bone in edit_bones:
+    if bone == Root_Bone:
+        continue
+    Part0Part = Motor6Ds[bone.name]["Part0"]
+    for i in Motor6Ds:
+        if Motor6Ds[i]["Part1"] == Part0Part:
+            bone.parent = edit_bones[i]
+            break
+
 # Exit Edit Mode
 bpy.ops.object.mode_set(mode='OBJECT')
 
+# Add keyframes for animation
+keyframe_sequence = Json_data["KeyframeSequence"]
+
+print(armature_object.pose.bones.items())
+
+# Iterate through the keyframes
+for frame_str, bone_transforms in keyframe_sequence.items():
+    frame_int = int(frame_str)  # Convert frame string to integer
+    
+    print(frame_int)
+    
+    # Loop through each bone's transformation data
+    for bone_name, transform_data in bone_transforms.items():
+            for i in Motor6Ds:
+                if bone_name == RootPart:
+                    continue
+                
+                if Motor6Ds[i]["Part0"] == transform_data["Part0"] and Motor6Ds[i]["Part1"] == transform_data["Part1"]:
+                    pose_bone = armature_object.pose.bones[i]
+                    c0_mat = cf_to_mat(Motor6Ds[i]["C0"])
+
+            # Convert CFrame to Blender matrix
+            cframe = transform_data["CFrame"] # This is the offset of the C0 value
+            matrix = cf_to_mat(cframe)  # Convert to matrix
+            
+            print(bone_name)
+            
+            obj_mat = cf_to_mat(Json_data["Header"]["Parts"][bone_name]["CFrame"])
+            
+            print(obj_mat)
+            print(c0_mat)
+            print(matrix)
+            
+            pose_bone.matrix = c0_mat @ matrix @ y_to_z
+            
+            pose_bone.keyframe_insert(data_path="location", frame=frame_int)
+            pose_bone.keyframe_insert(data_path="rotation_quaternion", frame=frame_int)
+            
+            
 
 # TODO: Function for getting position of Motor6D Joint
     # Note that:
