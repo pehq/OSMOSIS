@@ -195,8 +195,8 @@
             }
         },
         "RigName": "Rig",
-        "FPS": 30,
-        "RootPart": "HumanoidRootPart",
+        "FPS": 60,
+        "RootPart": null,
         "Parts": {
             "Left Leg": {
                 "Size": [
@@ -348,66 +348,6 @@
         }
     },
     "KeyframeSequence": {
-        "7": {
-            "Torso": {
-                "Part1": "Torso",
-                "Part0": "HumanoidRootPart",
-                "CFrame": [
-                    0,
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                    0,
-                    1
-                ],
-                "EasingStyle": "Linear",
-                "EasingDirection": "In"
-            },
-            "HumanoidRootPart": {
-                "EasingStyle": "Linear",
-                "CFrame": [
-                    0,
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                    0,
-                    1
-                ],
-                "EasingDirection": "In"
-            },
-            "Left Arm": {
-                "Part1": "Left Arm",
-                "Part0": "Torso",
-                "CFrame": [
-                    0,
-                    -2.384185791015625e-07,
-                    0,
-                    -0.7660444974899292,
-                    0.642787516117096,
-                    0,
-                    -0.642787516117096,
-                    -0.7660444974899292,
-                    0,
-                    0,
-                    0,
-                    1
-                ],
-                "EasingStyle": "Linear",
-                "EasingDirection": "In"
-            }
-        },
         "0": {
             "Torso": {
                 "Part1": "Torso",
@@ -430,26 +370,8 @@
                 "EasingDirection": "In"
             },
             "HumanoidRootPart": {
-                "EasingStyle": "Linear",
-                "CFrame": [
-                    0,
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                    0,
-                    1
-                ],
-                "EasingDirection": "In"
-            },
-            "Left Arm": {
-                "Part1": "Left Arm",
-                "Part0": "Torso",
+                "Part1": "HumanoidRootPart",
+                "Part0": "Keyframe",
                 "CFrame": [
                     0,
                     0,
@@ -465,46 +387,6 @@
                     1
                 ],
                 "EasingStyle": "Linear",
-                "EasingDirection": "In"
-            }
-        },
-        "15": {
-            "Torso": {
-                "Part1": "Torso",
-                "Part0": "HumanoidRootPart",
-                "CFrame": [
-                    0,
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                    0,
-                    1
-                ],
-                "EasingStyle": "Linear",
-                "EasingDirection": "In"
-            },
-            "HumanoidRootPart": {
-                "EasingStyle": "Linear",
-                "CFrame": [
-                    0,
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                    0,
-                    1
-                ],
                 "EasingDirection": "In"
             },
             "Left Arm": {

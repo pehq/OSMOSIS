@@ -196,7 +196,7 @@
         },
         "RigName": "Rig",
         "FPS": 60,
-        "RootPart": null,
+        "RootPart": "HumanoidRootPart",
         "Parts": {
             "Left Leg": {
                 "Size": [
@@ -349,9 +349,9 @@
     },
     "KeyframeSequence": {
         "0": {
-            "Torso": {
-                "Part1": "Torso",
-                "Part0": "HumanoidRootPart",
+            "Left Leg": {
+                "Part1": "Left Leg",
+                "Part0": "Torso",
                 "CFrame": [
                     0,
                     0,
@@ -369,9 +369,9 @@
                 "EasingStyle": "Linear",
                 "EasingDirection": "In"
             },
-            "HumanoidRootPart": {
-                "Part1": "HumanoidRootPart",
-                "Part0": "Keyframe",
+            "Right Arm": {
+                "Part1": "Right Arm",
+                "Part0": "Torso",
                 "CFrame": [
                     0,
                     0,
@@ -393,18 +393,656 @@
                 "Part1": "Left Arm",
                 "Part0": "Torso",
                 "CFrame": [
-                    -0.42616963386535645,
-                    0.27764201164245605,
-                    0.42104148864746094,
-                    0.16989105939865112,
-                    -0.040622882544994354,
-                    0.9846253395080566,
-                    -0.9814140200614929,
-                    0.08350521326065063,
-                    0.1727820634841919,
-                    -0.08924004435539246,
-                    -0.9956792593002319,
-                    -0.025680795311927795
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            },
+            "Head": {
+                "Part1": "Head",
+                "Part0": "Torso",
+                "CFrame": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            },
+            "Torso": {
+                "Part1": "Torso",
+                "Part0": "HumanoidRootPart",
+                "CFrame": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            },
+            "HumanoidRootPart": {
+                "EasingStyle": "Linear",
+                "CFrame": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingDirection": "In"
+            },
+            "Right Leg": {
+                "Part1": "Right Leg",
+                "Part0": "Torso",
+                "CFrame": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            }
+        },
+        "40": {
+            "Left Leg": {
+                "Part1": "Left Leg",
+                "Part0": "Torso",
+                "CFrame": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            },
+            "Right Arm": {
+                "Part1": "Right Arm",
+                "Part0": "Torso",
+                "CFrame": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            },
+            "Left Arm": {
+                "Part1": "Left Arm",
+                "Part0": "Torso",
+                "CFrame": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            },
+            "Head": {
+                "Part1": "Head",
+                "Part0": "Torso",
+                "CFrame": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            },
+            "Torso": {
+                "Part1": "Torso",
+                "Part0": "HumanoidRootPart",
+                "CFrame": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            },
+            "HumanoidRootPart": {
+                "EasingStyle": "Linear",
+                "CFrame": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingDirection": "In"
+            },
+            "Right Leg": {
+                "Part1": "Right Leg",
+                "Part0": "Torso",
+                "CFrame": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            }
+        },
+        "20": {
+            "Left Leg": {
+                "Part1": "Left Leg",
+                "Part0": "Torso",
+                "CFrame": [
+                    0,
+                    -2,
+                    2,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            },
+            "Right Arm": {
+                "Part1": "Right Arm",
+                "Part0": "Torso",
+                "CFrame": [
+                    0,
+                    0,
+                    3,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            },
+            "Left Arm": {
+                "Part1": "Left Arm",
+                "Part0": "Torso",
+                "CFrame": [
+                    0,
+                    0,
+                    3,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            },
+            "Head": {
+                "Part1": "Head",
+                "Part0": "Torso",
+                "CFrame": [
+                    0,
+                    0,
+                    3,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            },
+            "Torso": {
+                "Part1": "Torso",
+                "Part0": "HumanoidRootPart",
+                "CFrame": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            },
+            "HumanoidRootPart": {
+                "EasingStyle": "Linear",
+                "CFrame": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingDirection": "In"
+            },
+            "Right Leg": {
+                "Part1": "Right Leg",
+                "Part0": "Torso",
+                "CFrame": [
+                    0,
+                    -2,
+                    2,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            }
+        },
+        "30": {
+            "Left Leg": {
+                "Part1": "Left Leg",
+                "Part0": "Torso",
+                "CFrame": [
+                    0,
+                    -2,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            },
+            "Right Arm": {
+                "Part1": "Right Arm",
+                "Part0": "Torso",
+                "CFrame": [
+                    0,
+                    2,
+                    3,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            },
+            "Left Arm": {
+                "Part1": "Left Arm",
+                "Part0": "Torso",
+                "CFrame": [
+                    0,
+                    -2,
+                    3,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            },
+            "Head": {
+                "Part1": "Head",
+                "Part0": "Torso",
+                "CFrame": [
+                    2,
+                    0,
+                    3,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            },
+            "Torso": {
+                "Part1": "Torso",
+                "Part0": "HumanoidRootPart",
+                "CFrame": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            },
+            "HumanoidRootPart": {
+                "EasingStyle": "Linear",
+                "CFrame": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingDirection": "In"
+            },
+            "Right Leg": {
+                "Part1": "Right Leg",
+                "Part0": "Torso",
+                "CFrame": [
+                    0,
+                    -2,
+                    4,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            }
+        },
+        "10": {
+            "Left Leg": {
+                "Part1": "Left Leg",
+                "Part0": "Torso",
+                "CFrame": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            },
+            "Right Arm": {
+                "Part1": "Right Arm",
+                "Part0": "Torso",
+                "CFrame": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            },
+            "Left Arm": {
+                "Part1": "Left Arm",
+                "Part0": "Torso",
+                "CFrame": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            },
+            "Head": {
+                "Part1": "Head",
+                "Part0": "Torso",
+                "CFrame": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            },
+            "Torso": {
+                "Part1": "Torso",
+                "Part0": "HumanoidRootPart",
+                "CFrame": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingStyle": "Linear",
+                "EasingDirection": "In"
+            },
+            "HumanoidRootPart": {
+                "EasingStyle": "Linear",
+                "CFrame": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "EasingDirection": "In"
+            },
+            "Right Leg": {
+                "Part1": "Right Leg",
+                "Part0": "Torso",
+                "CFrame": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1
                 ],
                 "EasingStyle": "Linear",
                 "EasingDirection": "In"
