@@ -96,18 +96,18 @@
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<CoordinateFrame name="CFrame">
-					<X>-0.107282728</X>
-					<Y>2.20057917</Y>
-					<Z>-7.29841328</Z>
-					<R00>-0.995499969</R00>
-					<R01>0.0143655706</R01>
-					<R02>-0.0936669409</R02>
-					<R10>9.31322575e-10</R10>
-					<R11>0.98844254</R11>
-					<R12>0.151596054</R12>
-					<R20>0.0947621614</R20>
-					<R21>0.150913864</R21>
-					<R22>-0.983994484</R22>
+					<X>0.976467311</X>
+					<Y>0.500892162</Y>
+					<Z>-13.7870989</Z>
+					<R00>-0.997826815</R00>
+					<R01>-3.96685255e-06</R01>
+					<R02>0.0658915788</R02>
+					<R10>-4.54747351e-13</R10>
+					<R11>1</R11>
+					<R12>6.02027139e-05</R12>
+					<R20>-0.0658915788</R20>
+					<R21>6.00718813e-05</R21>
+					<R22>-0.997826815</R22>
 				</CoordinateFrame>
 				<Ref name="CameraSubject">null</Ref>
 				<token name="CameraType">0</token>
@@ -116,9 +116,9 @@
 				<float name="FieldOfView">70</float>
 				<token name="FieldOfViewMode">0</token>
 				<CoordinateFrame name="Focus">
-					<X>0.0800512433</X>
-					<Y>1.89738691</Y>
-					<Z>-5.33042336</Z>
+					<X>0</X>
+					<Y>0.5</Y>
+					<Z>1</Z>
 					<R00>1</R00>
 					<R01>0</R01>
 					<R02>0</R02>
@@ -399,7 +399,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 				<CoordinateFrame name="CFrame">
 					<X>0</X>
 					<Y>0.5</Y>
-					<Z>0</Z>
+					<Z>1</Z>
 					<R00>1</R00>
 					<R01>0</R01>
 					<R02>0</R02>
@@ -506,128 +506,6 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 					<float name="Transparency">1</float>
 					<UniqueId name="UniqueId">15702645b5a46775079f51ff0000037e</UniqueId>
 					<int name="ZIndex">1</int>
-				</Properties>
-			</Item>
-		</Item>
-		<Item class="Part" referent="RBX0E4C6A30B0DE42F0957D6C55F982260F">
-			<Properties>
-				<bool name="Anchored">false</bool>
-				<BinaryString name="AttributesSerialize"></BinaryString>
-				<bool name="AudioCanCollide">true</bool>
-				<float name="BackParamA">-0.5</float>
-				<float name="BackParamB">0.5</float>
-				<token name="BackSurface">0</token>
-				<token name="BackSurfaceInput">0</token>
-				<float name="BottomParamA">-0.5</float>
-				<float name="BottomParamB">0.5</float>
-				<token name="BottomSurface">0</token>
-				<token name="BottomSurfaceInput">0</token>
-				<CoordinateFrame name="CFrame">
-					<X>-92</X>
-					<Y>0.500001013</Y>
-					<Z>-42</Z>
-					<R00>1</R00>
-					<R01>0</R01>
-					<R02>0</R02>
-					<R10>0</R10>
-					<R11>1</R11>
-					<R12>0</R12>
-					<R20>0</R20>
-					<R21>0</R21>
-					<R22>1</R22>
-				</CoordinateFrame>
-				<bool name="CanCollide">true</bool>
-				<bool name="CanQuery">true</bool>
-				<bool name="CanTouch">true</bool>
-				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-				<bool name="CastShadow">true</bool>
-				<string name="CollisionGroup">Default</string>
-				<int name="CollisionGroupId">0</int>
-				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
-				<PhysicalProperties name="CustomPhysicalProperties">
-					<CustomPhysics>false</CustomPhysics>
-				</PhysicalProperties>
-				<bool name="DefinesCapabilities">false</bool>
-				<bool name="EnableFluidForces">true</bool>
-				<float name="FrontParamA">-0.5</float>
-				<float name="FrontParamB">0.5</float>
-				<token name="FrontSurface">0</token>
-				<token name="FrontSurfaceInput">0</token>
-				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-				<float name="LeftParamA">-0.5</float>
-				<float name="LeftParamB">0.5</float>
-				<token name="LeftSurface">0</token>
-				<token name="LeftSurfaceInput">0</token>
-				<bool name="Locked">false</bool>
-				<bool name="Massless">false</bool>
-				<token name="Material">256</token>
-				<string name="MaterialVariantSerialized"></string>
-				<string name="Name">Part</string>
-				<CoordinateFrame name="PivotOffset">
-					<X>0</X>
-					<Y>0</Y>
-					<Z>0</Z>
-					<R00>1</R00>
-					<R01>0</R01>
-					<R02>0</R02>
-					<R10>0</R10>
-					<R11>1</R11>
-					<R12>0</R12>
-					<R20>0</R20>
-					<R21>0</R21>
-					<R22>1</R22>
-				</CoordinateFrame>
-				<float name="Reflectance">0</float>
-				<float name="RightParamA">-0.5</float>
-				<float name="RightParamB">0.5</float>
-				<token name="RightSurface">0</token>
-				<token name="RightSurfaceInput">0</token>
-				<int name="RootPriority">0</int>
-				<Vector3 name="RotVelocity">
-					<X>0</X>
-					<Y>0</Y>
-					<Z>0</Z>
-				</Vector3>
-				<int64 name="SourceAssetId">-1</int64>
-				<BinaryString name="Tags"></BinaryString>
-				<float name="TopParamA">-0.5</float>
-				<float name="TopParamB">0.5</float>
-				<token name="TopSurface">0</token>
-				<token name="TopSurfaceInput">0</token>
-				<float name="Transparency">0</float>
-				<UniqueId name="UniqueId">15702645b5a46775079f51ff00005fdb</UniqueId>
-				<Vector3 name="Velocity">
-					<X>0</X>
-					<Y>0</Y>
-					<Z>0</Z>
-				</Vector3>
-				<token name="formFactorRaw">1</token>
-				<token name="shape">1</token>
-				<Vector3 name="size">
-					<X>4</X>
-					<Y>1</Y>
-					<Z>2</Z>
-				</Vector3>
-			</Properties>
-			<Item class="PointLight" referent="RBXE4CBD0CF34734171922C225E8D71D547">
-				<Properties>
-					<BinaryString name="AttributesSerialize"></BinaryString>
-					<float name="Brightness">1</float>
-					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-					<Color3 name="Color">
-						<R>1</R>
-						<G>1</G>
-						<B>1</B>
-					</Color3>
-					<bool name="DefinesCapabilities">false</bool>
-					<bool name="Enabled">true</bool>
-					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-					<string name="Name">PointLight</string>
-					<float name="Range">8</float>
-					<bool name="Shadows">false</bool>
-					<int64 name="SourceAssetId">-1</int64>
-					<BinaryString name="Tags"></BinaryString>
-					<UniqueId name="UniqueId">15702645b5a46775079f51ff00005fe7</UniqueId>
 				</Properties>
 			</Item>
 		</Item>
@@ -3364,7 +3242,7 @@ end
 					<UniqueId name="UniqueId">38dd937ae98effe207a4ea8d00007719</UniqueId>
 				</Properties>
 			</Item>
-			<Item class="ObjectValue" referent="RBXD3F31B25918A486FA6B54DE431170DB6">
+			<Item class="ObjectValue" referent="RBXA9E508067CE74CD8B9C3F2EFFC802A04">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -3373,12 +3251,12 @@ end
 					<string name="Name">AnimSaves</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
-					<UniqueId name="UniqueId">38dd937ae98effe207a4ea8d00007ad2</UniqueId>
-					<Ref name="Value">RBX9F82CA93FFEB44E5AF84D9FDDD83FCE1</Ref>
+					<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100005a7b</UniqueId>
+					<Ref name="Value">RBXB1CF070A689046B385220FF42E84D84A</Ref>
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="Part" referent="RBX5DB82D2B073F407CAA192D4991917FF1">
+		<Item class="Part" referent="RBXA6C21C0B9EC24442839B531BC4E7FC69">
 			<Properties>
 				<bool name="Anchored">false</bool>
 				<BinaryString name="AttributesSerialize"></BinaryString>
@@ -3431,7 +3309,7 @@ end
 				<bool name="Massless">false</bool>
 				<token name="Material">256</token>
 				<string name="MaterialVariantSerialized"></string>
-				<string name="Name">Part</string>
+				<string name="Name">Right Shoulder</string>
 				<CoordinateFrame name="PivotOffset">
 					<X>0</X>
 					<Y>0</Y>
@@ -3464,7 +3342,7 @@ end
 				<token name="TopSurface">3</token>
 				<token name="TopSurfaceInput">0</token>
 				<float name="Transparency">0</float>
-				<UniqueId name="UniqueId">60d452e50090a34707a6052e00005c41</UniqueId>
+				<UniqueId name="UniqueId">118744c6fd05a6cf07a8c681000071a2</UniqueId>
 				<Vector3 name="Velocity">
 					<X>0</X>
 					<Y>0</Y>
@@ -3479,7 +3357,7 @@ end
 				</Vector3>
 			</Properties>
 		</Item>
-		<Item class="Part" referent="RBX65AB727CB108496F9934AC1804A6B039">
+		<Item class="Part" referent="RBX814FEB1DE35E49399F9EC01FF258498D">
 			<Properties>
 				<bool name="Anchored">false</bool>
 				<BinaryString name="AttributesSerialize"></BinaryString>
@@ -3532,7 +3410,7 @@ end
 				<bool name="Massless">false</bool>
 				<token name="Material">256</token>
 				<string name="MaterialVariantSerialized"></string>
-				<string name="Name">Part</string>
+				<string name="Name">Left Shoulder</string>
 				<CoordinateFrame name="PivotOffset">
 					<X>0</X>
 					<Y>0</Y>
@@ -3565,7 +3443,7 @@ end
 				<token name="TopSurface">3</token>
 				<token name="TopSurfaceInput">0</token>
 				<float name="Transparency">0</float>
-				<UniqueId name="UniqueId">60d452e50090a34707a6052e00005c42</UniqueId>
+				<UniqueId name="UniqueId">118744c6fd05a6cf07a8c681000071a3</UniqueId>
 				<Vector3 name="Velocity">
 					<X>0</X>
 					<Y>0</Y>
@@ -3580,7 +3458,7 @@ end
 				</Vector3>
 			</Properties>
 		</Item>
-		<Item class="Part" referent="RBX17E394B95DD14916A7956FA322198C3F">
+		<Item class="Part" referent="RBXEBBF92936C364030AD5A8D3D855D8897">
 			<Properties>
 				<bool name="Anchored">false</bool>
 				<BinaryString name="AttributesSerialize"></BinaryString>
@@ -3633,7 +3511,7 @@ end
 				<bool name="Massless">false</bool>
 				<token name="Material">256</token>
 				<string name="MaterialVariantSerialized"></string>
-				<string name="Name">Part</string>
+				<string name="Name">Right Hip</string>
 				<CoordinateFrame name="PivotOffset">
 					<X>0</X>
 					<Y>0</Y>
@@ -3666,7 +3544,7 @@ end
 				<token name="TopSurface">3</token>
 				<token name="TopSurfaceInput">0</token>
 				<float name="Transparency">0</float>
-				<UniqueId name="UniqueId">60d452e50090a34707a6052e00005c43</UniqueId>
+				<UniqueId name="UniqueId">118744c6fd05a6cf07a8c681000071a4</UniqueId>
 				<Vector3 name="Velocity">
 					<X>0</X>
 					<Y>0</Y>
@@ -3681,7 +3559,7 @@ end
 				</Vector3>
 			</Properties>
 		</Item>
-		<Item class="Part" referent="RBX52E2DD482D6A4694AA0504EDAE3EB4BF">
+		<Item class="Part" referent="RBX82F81DC7DAA240478C699C68A2402B98">
 			<Properties>
 				<bool name="Anchored">false</bool>
 				<BinaryString name="AttributesSerialize"></BinaryString>
@@ -3734,7 +3612,7 @@ end
 				<bool name="Massless">false</bool>
 				<token name="Material">256</token>
 				<string name="MaterialVariantSerialized"></string>
-				<string name="Name">Part</string>
+				<string name="Name">Left Hip</string>
 				<CoordinateFrame name="PivotOffset">
 					<X>0</X>
 					<Y>0</Y>
@@ -3767,7 +3645,7 @@ end
 				<token name="TopSurface">3</token>
 				<token name="TopSurfaceInput">0</token>
 				<float name="Transparency">0</float>
-				<UniqueId name="UniqueId">60d452e50090a34707a6052e00005c44</UniqueId>
+				<UniqueId name="UniqueId">118744c6fd05a6cf07a8c681000071a5</UniqueId>
 				<Vector3 name="Velocity">
 					<X>0</X>
 					<Y>0</Y>
@@ -3782,7 +3660,7 @@ end
 				</Vector3>
 			</Properties>
 		</Item>
-		<Item class="Part" referent="RBXE0F5ADAF42B84847B70066548D8DC2E2">
+		<Item class="Part" referent="RBXC6DADE6DF465445BB86EBEDEB4E6D784">
 			<Properties>
 				<bool name="Anchored">false</bool>
 				<BinaryString name="AttributesSerialize"></BinaryString>
@@ -3835,7 +3713,7 @@ end
 				<bool name="Massless">false</bool>
 				<token name="Material">256</token>
 				<string name="MaterialVariantSerialized"></string>
-				<string name="Name">Part</string>
+				<string name="Name">Neck</string>
 				<CoordinateFrame name="PivotOffset">
 					<X>0</X>
 					<Y>0</Y>
@@ -3868,7 +3746,7 @@ end
 				<token name="TopSurface">3</token>
 				<token name="TopSurfaceInput">0</token>
 				<float name="Transparency">0</float>
-				<UniqueId name="UniqueId">60d452e50090a34707a6052e00005c45</UniqueId>
+				<UniqueId name="UniqueId">118744c6fd05a6cf07a8c681000071a6</UniqueId>
 				<Vector3 name="Velocity">
 					<X>0</X>
 					<Y>0</Y>
@@ -3883,7 +3761,7 @@ end
 				</Vector3>
 			</Properties>
 		</Item>
-		<Item class="Part" referent="RBX1B07990718A8492D9D0A78429D8DE154">
+		<Item class="Part" referent="RBXA2F626F48038420A8F56B0D6972C588F">
 			<Properties>
 				<bool name="Anchored">false</bool>
 				<BinaryString name="AttributesSerialize"></BinaryString>
@@ -3936,6 +3814,107 @@ end
 				<bool name="Massless">false</bool>
 				<token name="Material">256</token>
 				<string name="MaterialVariantSerialized"></string>
+				<string name="Name">RootJoint</string>
+				<CoordinateFrame name="PivotOffset">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<int name="RootPriority">0</int>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<int64 name="SourceAssetId">-1</int64>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<UniqueId name="UniqueId">118744c6fd05a6cf07a8c681000071a7</UniqueId>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">1</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.100000001</X>
+					<Y>0.00100000005</Y>
+					<Z>0.00100000005</Z>
+				</Vector3>
+			</Properties>
+		</Item>
+		<Item class="Part" referent="RBX803E85084777469C92BFF359DB07361A">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<bool name="AudioCanCollide">true</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>0</X>
+					<Y>4</Y>
+					<Z>0</Z>
+					<R00>-1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>0</R11>
+					<R12>1</R12>
+					<R20>0</R20>
+					<R21>1</R21>
+					<R22>0</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<bool name="CanQuery">true</bool>
+				<bool name="CanTouch">true</bool>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+				<bool name="CastShadow">true</bool>
+				<string name="CollisionGroup">Default</string>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4291045404</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<bool name="DefinesCapabilities">false</bool>
+				<bool name="EnableFluidForces">true</bool>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<bool name="Massless">false</bool>
+				<token name="Material">256</token>
+				<string name="MaterialVariantSerialized"></string>
 				<string name="Name">Part</string>
 				<CoordinateFrame name="PivotOffset">
 					<X>0</X>
@@ -3969,7 +3948,7 @@ end
 				<token name="TopSurface">3</token>
 				<token name="TopSurfaceInput">0</token>
 				<float name="Transparency">0</float>
-				<UniqueId name="UniqueId">60d452e50090a34707a6052e00005c46</UniqueId>
+				<UniqueId name="UniqueId">118744c6fd05a6cf07a8c6810000732c</UniqueId>
 				<Vector3 name="Velocity">
 					<X>0</X>
 					<Y>0</Y>
@@ -3979,8 +3958,109 @@ end
 				<token name="shape">1</token>
 				<Vector3 name="size">
 					<X>0.100000001</X>
-					<Y>0.00100000005</Y>
-					<Z>0.00100000005</Z>
+					<Y>0.100000001</Y>
+					<Z>0.100000001</Z>
+				</Vector3>
+			</Properties>
+		</Item>
+		<Item class="Part" referent="RBX95EA38137D2744CA9202FC02A735CF7C">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<bool name="AudioCanCollide">true</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>-2</X>
+					<Y>4</Y>
+					<Z>0</Z>
+					<R00>-1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>0</R11>
+					<R12>1</R12>
+					<R20>0</R20>
+					<R21>1</R21>
+					<R22>0</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<bool name="CanQuery">true</bool>
+				<bool name="CanTouch">true</bool>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+				<bool name="CastShadow">true</bool>
+				<string name="CollisionGroup">Default</string>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4291045404</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<bool name="DefinesCapabilities">false</bool>
+				<bool name="EnableFluidForces">true</bool>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<bool name="Massless">false</bool>
+				<token name="Material">256</token>
+				<string name="MaterialVariantSerialized"></string>
+				<string name="Name">Part</string>
+				<CoordinateFrame name="PivotOffset">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<int name="RootPriority">0</int>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<int64 name="SourceAssetId">-1</int64>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<UniqueId name="UniqueId">118744c6fd05a6cf07a8c681000073df</UniqueId>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">1</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.100000001</X>
+					<Y>0.100000001</Y>
+					<Z>0.100000001</Z>
 				</Vector3>
 			</Properties>
 		</Item>
@@ -5014,13 +5094,14 @@ function Tablefy.Tablefy(Model:Model, KeyframeSequence:KeyframeSequence)
 	end
 	Progress = #Model:GetChildren()
 	
+	print(DominantPart)
+	
 	local TableResult = {
 		["Header"] = {
 			["Motor6Ds"] = {},
 			["RigName"] = Model.Name,
 			["Parts"] = {},
-			["RootPart"] = DominantPart,
-			["FPS"] = 60
+			["RootPart"] = DominantPart.Name,
 		},
 		["KeyframeSequence"] = KeyframeSequence and {} or nil
 	}
@@ -5046,21 +5127,29 @@ function Tablefy.Tablefy(Model:Model, KeyframeSequence:KeyframeSequence)
 	if TableResult.KeyframeSequence == nil then
 		return TableResult
 	end
-
+	
+	TableResult.Header["FPS"] = KeyframeSequence:FindFirstChild("FPS") ~= nil and KeyframeSequence.FPS.Value or 60
+	
 	for j, Keyframe in ipairs(KeyframeSequence:GetChildren()) do
 		task.wait(); Progress += 1; print(Progress.. "/".. MaxProgress);
+		if Keyframe:IsA("Keyframe") == false then
+			continue
+		end
+		local IntFrameNum = math.round(Keyframe.Time * TableResult.Header.FPS)
 		
-		TableResult.KeyframeSequence[Keyframe.Time] = {}
+		TableResult.KeyframeSequence[IntFrameNum] = {}
+		
 		for k, Pose:Pose in ipairs(Keyframe:GetDescendants()) do
 			task.wait(); Progress += 1; print(Progress.. "/".. MaxProgress);
-
+			
 			if Pose:IsA("Pose") == false then
 				continue
 			end
-			TableResult.KeyframeSequence[Keyframe.Time][Pose.Name] = {
+			print(Pose.Name)
+			TableResult.KeyframeSequence[IntFrameNum][Pose.Name] = {
 				["CFrame"] = {Pose.CFrame:GetComponents()},
-				["Part0"] = Pose.Name ~= Model.PrimaryPart and Pose.Parent.Name or nil,
-				["Part1"] = Pose.Name ~= Model.PrimaryPart and Pose.Name or nil,
+				["Part0"] = Pose.Name ~= DominantPart.Name and Pose.Parent.Name or nil,
+				["Part1"] = Pose.Name ~= DominantPart.Name and Pose.Name or nil,
 				["EasingDirection"] = Pose.EasingDirection.Name,
 				["EasingStyle"] = Pose.EasingStyle.Name,
 			}
@@ -7500,7 +7589,7 @@ toolbarButton.Click:Connect(OnClick)]]></ProtectedString>
 			<BinaryString name="Tags"></BinaryString>
 			<UniqueId name="UniqueId">15702645b5a46775079f51ff00000356</UniqueId>
 		</Properties>
-		<Item class="Model" referent="RBX94097B72951F4312BA7967942D8ABF53">
+		<Item class="Model" referent="RBXABFFFE58338C45DD9F5C7AE131699703">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -7534,10 +7623,10 @@ toolbarButton.Click:Connect(OnClick)]]></ProtectedString>
 				<float name="ScaleFactor">1</float>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
-				<UniqueId name="UniqueId">3d4be88126a9bda0079fa91900005d0a</UniqueId>
+				<UniqueId name="UniqueId">6c5004167824b2c007a72c1d0000a947</UniqueId>
 				<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
 			</Properties>
-			<Item class="ObjectValue" referent="RBX9F82CA93FFEB44E5AF84D9FDDD83FCE1">
+			<Item class="ObjectValue" referent="RBXCBC4F84BE0E44528A19798DDD2BDACB2">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -7546,25 +7635,38 @@ toolbarButton.Click:Connect(OnClick)]]></ProtectedString>
 					<string name="Name">Rig</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
-					<UniqueId name="UniqueId">3d4be88126a9bda0079fa91900005d0b</UniqueId>
+					<UniqueId name="UniqueId">118744c6fd05a6cf07a8c681000059bb</UniqueId>
 					<Ref name="Value">RBX0</Ref>
 				</Properties>
-				<Item class="KeyframeSequence" referent="RBX919A7D9900F74AC08C1658ED5969E67C">
+			</Item>
+			<Item class="ObjectValue" referent="RBXB1CF070A689046B385220FF42E84D84A">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<string name="Name">Rig</string>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100005a7c</UniqueId>
+					<Ref name="Value">RBX0</Ref>
+				</Properties>
+				<Item class="KeyframeSequence" referent="RBX543A5BE2405A45EC96821E627A9997ED">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<float name="AuthoredHipHeight">2</float>
 						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 						<bool name="DefinesCapabilities">false</bool>
-						<BinaryString name="GuidBinaryString">neyoqxeAQQKIi5HH6Wt1QQ==</BinaryString>
+						<BinaryString name="GuidBinaryString">qdptAUz/S2Gq05ZNhAaq2g==</BinaryString>
 						<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
 						<bool name="Loop">false</bool>
-						<string name="Name">Wave</string>
+						<string name="Name">PosTest</string>
 						<token name="Priority">1000</token>
 						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags">MTczNzM2MzUwMw==</BinaryString>
-						<UniqueId name="UniqueId">3d4be88126a9bda0079fa919000080cd</UniqueId>
+						<BinaryString name="Tags">MTczNzk2MTczOQ==</BinaryString>
+						<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a0b</UniqueId>
 					</Properties>
-					<Item class="Keyframe" referent="RBX0FE06010A5E348EFB548312FFCF50EDE">
+					<Item class="Keyframe" referent="RBX595EEE4383614D93A3A2128A82F206C9">
 						<Properties>
 							<BinaryString name="AttributesSerialize"></BinaryString>
 							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -7574,9 +7676,9 @@ toolbarButton.Click:Connect(OnClick)]]></ProtectedString>
 							<int64 name="SourceAssetId">-1</int64>
 							<BinaryString name="Tags"></BinaryString>
 							<float name="Time">0</float>
-							<UniqueId name="UniqueId">3d4be88126a9bda0079fa919000080ce</UniqueId>
+							<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a0c</UniqueId>
 						</Properties>
-						<Item class="Pose" referent="RBX6763FEDA4C1E4E219C4F4728F2F2CC4E">
+						<Item class="Pose" referent="RBX2242EFAC6D8D4B8C9E086249E99F23F4">
 							<Properties>
 								<BinaryString name="AttributesSerialize"></BinaryString>
 								<CoordinateFrame name="CFrame">
@@ -7601,10 +7703,10 @@ toolbarButton.Click:Connect(OnClick)]]></ProtectedString>
 								<string name="Name">HumanoidRootPart</string>
 								<int64 name="SourceAssetId">-1</int64>
 								<BinaryString name="Tags"></BinaryString>
-								<UniqueId name="UniqueId">3d4be88126a9bda0079fa919000080cf</UniqueId>
+								<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a0d</UniqueId>
 								<float name="Weight">0</float>
 							</Properties>
-							<Item class="Pose" referent="RBX7D40BB400C3A40C1BA8CF49680309837">
+							<Item class="Pose" referent="RBX1499997486F34735B0712573EC8EB00B">
 								<Properties>
 									<BinaryString name="AttributesSerialize"></BinaryString>
 									<CoordinateFrame name="CFrame">
@@ -7629,10 +7731,68 @@ toolbarButton.Click:Connect(OnClick)]]></ProtectedString>
 									<string name="Name">Torso</string>
 									<int64 name="SourceAssetId">-1</int64>
 									<BinaryString name="Tags"></BinaryString>
-									<UniqueId name="UniqueId">3d4be88126a9bda0079fa919000080d0</UniqueId>
-									<float name="Weight">0</float>
+									<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a0e</UniqueId>
+									<float name="Weight">1</float>
 								</Properties>
-								<Item class="Pose" referent="RBX7B9DDA57D8AB40428C8A1A6328B8837C">
+								<Item class="Pose" referent="RBXF9C24DFE9F0746BAA00572CE5BB47202">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<CoordinateFrame name="CFrame">
+											<X>0</X>
+											<Y>0</Y>
+											<Z>0</Z>
+											<R00>1</R00>
+											<R01>0</R01>
+											<R02>0</R02>
+											<R10>0</R10>
+											<R11>1</R11>
+											<R12>0</R12>
+											<R20>0</R20>
+											<R21>0</R21>
+											<R22>1</R22>
+										</CoordinateFrame>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<token name="EasingDirection">0</token>
+										<token name="EasingStyle">0</token>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<string name="Name">Left Leg</string>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a0f</UniqueId>
+										<float name="Weight">1</float>
+									</Properties>
+								</Item>
+								<Item class="Pose" referent="RBX6489F2E694C7450B83477CA49E93EAFA">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<CoordinateFrame name="CFrame">
+											<X>0</X>
+											<Y>0</Y>
+											<Z>0</Z>
+											<R00>1</R00>
+											<R01>0</R01>
+											<R02>0</R02>
+											<R10>0</R10>
+											<R11>1</R11>
+											<R12>0</R12>
+											<R20>0</R20>
+											<R21>0</R21>
+											<R22>1</R22>
+										</CoordinateFrame>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<token name="EasingDirection">0</token>
+										<token name="EasingStyle">0</token>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<string name="Name">Right Arm</string>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a10</UniqueId>
+										<float name="Weight">1</float>
+									</Properties>
+								</Item>
+								<Item class="Pose" referent="RBXDBD8FC4DA4BF43409D29856D9930D3E1">
 									<Properties>
 										<BinaryString name="AttributesSerialize"></BinaryString>
 										<CoordinateFrame name="CFrame">
@@ -7657,14 +7817,72 @@ toolbarButton.Click:Connect(OnClick)]]></ProtectedString>
 										<string name="Name">Left Arm</string>
 										<int64 name="SourceAssetId">-1</int64>
 										<BinaryString name="Tags"></BinaryString>
-										<UniqueId name="UniqueId">3d4be88126a9bda0079fa919000080d1</UniqueId>
+										<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a11</UniqueId>
+										<float name="Weight">1</float>
+									</Properties>
+								</Item>
+								<Item class="Pose" referent="RBX8E6064352AE140B7BF17F231B007DD6B">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<CoordinateFrame name="CFrame">
+											<X>0</X>
+											<Y>0</Y>
+											<Z>0</Z>
+											<R00>1</R00>
+											<R01>0</R01>
+											<R02>0</R02>
+											<R10>0</R10>
+											<R11>1</R11>
+											<R12>0</R12>
+											<R20>0</R20>
+											<R21>0</R21>
+											<R22>1</R22>
+										</CoordinateFrame>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<token name="EasingDirection">0</token>
+										<token name="EasingStyle">0</token>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<string name="Name">Right Leg</string>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a12</UniqueId>
+										<float name="Weight">1</float>
+									</Properties>
+								</Item>
+								<Item class="Pose" referent="RBX27A8CCA4C6D94118944FDFD23F4A2EA2">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<CoordinateFrame name="CFrame">
+											<X>0</X>
+											<Y>0</Y>
+											<Z>0</Z>
+											<R00>1</R00>
+											<R01>0</R01>
+											<R02>0</R02>
+											<R10>0</R10>
+											<R11>1</R11>
+											<R12>0</R12>
+											<R20>0</R20>
+											<R21>0</R21>
+											<R22>1</R22>
+										</CoordinateFrame>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<token name="EasingDirection">0</token>
+										<token name="EasingStyle">0</token>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<string name="Name">Head</string>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a13</UniqueId>
 										<float name="Weight">1</float>
 									</Properties>
 								</Item>
 							</Item>
 						</Item>
 					</Item>
-					<Item class="Keyframe" referent="RBXB02544E41BA849BC9BC7A907BF14677A">
+					<Item class="Keyframe" referent="RBX5B206D4CCF7949C1A456B0B668E2D9A7">
 						<Properties>
 							<BinaryString name="AttributesSerialize"></BinaryString>
 							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -7673,10 +7891,10 @@ toolbarButton.Click:Connect(OnClick)]]></ProtectedString>
 							<string name="Name">Keyframe</string>
 							<int64 name="SourceAssetId">-1</int64>
 							<BinaryString name="Tags"></BinaryString>
-							<float name="Time">0.233333334</float>
-							<UniqueId name="UniqueId">3d4be88126a9bda0079fa919000080d2</UniqueId>
+							<float name="Time">0.166666672</float>
+							<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a14</UniqueId>
 						</Properties>
-						<Item class="Pose" referent="RBX0C783D1B8A87419B888A68C5BCDE13BB">
+						<Item class="Pose" referent="RBX356D39FE748F445E80B83E661C47CDE4">
 							<Properties>
 								<BinaryString name="AttributesSerialize"></BinaryString>
 								<CoordinateFrame name="CFrame">
@@ -7701,10 +7919,10 @@ toolbarButton.Click:Connect(OnClick)]]></ProtectedString>
 								<string name="Name">HumanoidRootPart</string>
 								<int64 name="SourceAssetId">-1</int64>
 								<BinaryString name="Tags"></BinaryString>
-								<UniqueId name="UniqueId">3d4be88126a9bda0079fa919000080d3</UniqueId>
+								<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a15</UniqueId>
 								<float name="Weight">0</float>
 							</Properties>
-							<Item class="Pose" referent="RBX17854C736BDC4C1C9D7D856221672F01">
+							<Item class="Pose" referent="RBXB28387154BC54E0F8742149C059F6F8B">
 								<Properties>
 									<BinaryString name="AttributesSerialize"></BinaryString>
 									<CoordinateFrame name="CFrame">
@@ -7729,23 +7947,81 @@ toolbarButton.Click:Connect(OnClick)]]></ProtectedString>
 									<string name="Name">Torso</string>
 									<int64 name="SourceAssetId">-1</int64>
 									<BinaryString name="Tags"></BinaryString>
-									<UniqueId name="UniqueId">3d4be88126a9bda0079fa919000080d4</UniqueId>
-									<float name="Weight">0</float>
+									<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a16</UniqueId>
+									<float name="Weight">1</float>
 								</Properties>
-								<Item class="Pose" referent="RBXDEEBAF2DA9A942568EAB5337B47D14E6">
+								<Item class="Pose" referent="RBX0B4F304404A440F2BDA838C6CF9D4B37">
 									<Properties>
 										<BinaryString name="AttributesSerialize"></BinaryString>
 										<CoordinateFrame name="CFrame">
 											<X>0</X>
-											<Y>-2.38418579e-07</Y>
+											<Y>0</Y>
 											<Z>0</Z>
-											<R00>-0.766044497</R00>
-											<R01>0.642787516</R01>
+											<R00>1</R00>
+											<R01>0</R01>
 											<R02>0</R02>
-											<R10>-0.642787516</R10>
-											<R11>-0.766044497</R11>
+											<R10>0</R10>
+											<R11>1</R11>
 											<R12>0</R12>
-											<R20>-0</R20>
+											<R20>0</R20>
+											<R21>0</R21>
+											<R22>1</R22>
+										</CoordinateFrame>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<token name="EasingDirection">0</token>
+										<token name="EasingStyle">0</token>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<string name="Name">Left Leg</string>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a17</UniqueId>
+										<float name="Weight">1</float>
+									</Properties>
+								</Item>
+								<Item class="Pose" referent="RBX9945F72FD0C64C309CD38D9BF6D7667E">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<CoordinateFrame name="CFrame">
+											<X>0</X>
+											<Y>0</Y>
+											<Z>0</Z>
+											<R00>1</R00>
+											<R01>0</R01>
+											<R02>0</R02>
+											<R10>0</R10>
+											<R11>1</R11>
+											<R12>0</R12>
+											<R20>0</R20>
+											<R21>0</R21>
+											<R22>1</R22>
+										</CoordinateFrame>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<token name="EasingDirection">0</token>
+										<token name="EasingStyle">0</token>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<string name="Name">Right Arm</string>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a18</UniqueId>
+										<float name="Weight">1</float>
+									</Properties>
+								</Item>
+								<Item class="Pose" referent="RBX144F2C303CAD4860A0CC0156940B56DA">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<CoordinateFrame name="CFrame">
+											<X>0</X>
+											<Y>0</Y>
+											<Z>0</Z>
+											<R00>1</R00>
+											<R01>0</R01>
+											<R02>0</R02>
+											<R10>0</R10>
+											<R11>1</R11>
+											<R12>0</R12>
+											<R20>0</R20>
 											<R21>0</R21>
 											<R22>1</R22>
 										</CoordinateFrame>
@@ -7757,14 +8033,72 @@ toolbarButton.Click:Connect(OnClick)]]></ProtectedString>
 										<string name="Name">Left Arm</string>
 										<int64 name="SourceAssetId">-1</int64>
 										<BinaryString name="Tags"></BinaryString>
-										<UniqueId name="UniqueId">3d4be88126a9bda0079fa919000080d5</UniqueId>
+										<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a19</UniqueId>
+										<float name="Weight">1</float>
+									</Properties>
+								</Item>
+								<Item class="Pose" referent="RBXF7FFE518143F4AE79CF124557F65FCD9">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<CoordinateFrame name="CFrame">
+											<X>0</X>
+											<Y>0</Y>
+											<Z>0</Z>
+											<R00>1</R00>
+											<R01>0</R01>
+											<R02>0</R02>
+											<R10>0</R10>
+											<R11>1</R11>
+											<R12>0</R12>
+											<R20>0</R20>
+											<R21>0</R21>
+											<R22>1</R22>
+										</CoordinateFrame>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<token name="EasingDirection">0</token>
+										<token name="EasingStyle">0</token>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<string name="Name">Right Leg</string>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a1a</UniqueId>
+										<float name="Weight">1</float>
+									</Properties>
+								</Item>
+								<Item class="Pose" referent="RBXDC4DE4C69694405CAA20ADB12E9D8EA8">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<CoordinateFrame name="CFrame">
+											<X>0</X>
+											<Y>0</Y>
+											<Z>0</Z>
+											<R00>1</R00>
+											<R01>0</R01>
+											<R02>0</R02>
+											<R10>0</R10>
+											<R11>1</R11>
+											<R12>0</R12>
+											<R20>0</R20>
+											<R21>0</R21>
+											<R22>1</R22>
+										</CoordinateFrame>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<token name="EasingDirection">0</token>
+										<token name="EasingStyle">0</token>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<string name="Name">Head</string>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a1b</UniqueId>
 										<float name="Weight">1</float>
 									</Properties>
 								</Item>
 							</Item>
 						</Item>
 					</Item>
-					<Item class="Keyframe" referent="RBX9CA43F56455445CF9F44C0F3C8D13500">
+					<Item class="Keyframe" referent="RBXC14F04548EE84F03B02570A47410ACEB">
 						<Properties>
 							<BinaryString name="AttributesSerialize"></BinaryString>
 							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -7773,10 +8107,10 @@ toolbarButton.Click:Connect(OnClick)]]></ProtectedString>
 							<string name="Name">Keyframe</string>
 							<int64 name="SourceAssetId">-1</int64>
 							<BinaryString name="Tags"></BinaryString>
-							<float name="Time">0.5</float>
-							<UniqueId name="UniqueId">3d4be88126a9bda0079fa919000080d6</UniqueId>
+							<float name="Time">0.333333343</float>
+							<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a1c</UniqueId>
 						</Properties>
-						<Item class="Pose" referent="RBXE0915D50F9C84C86AA9D4A44F4A43B06">
+						<Item class="Pose" referent="RBX3A26591C61714730A363086FC72C8881">
 							<Properties>
 								<BinaryString name="AttributesSerialize"></BinaryString>
 								<CoordinateFrame name="CFrame">
@@ -7801,10 +8135,10 @@ toolbarButton.Click:Connect(OnClick)]]></ProtectedString>
 								<string name="Name">HumanoidRootPart</string>
 								<int64 name="SourceAssetId">-1</int64>
 								<BinaryString name="Tags"></BinaryString>
-								<UniqueId name="UniqueId">3d4be88126a9bda0079fa919000080d7</UniqueId>
+								<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a1d</UniqueId>
 								<float name="Weight">0</float>
 							</Properties>
-							<Item class="Pose" referent="RBX1A83540732954F628D7E89BEEC9E0F6A">
+							<Item class="Pose" referent="RBXEEF82BEB78AC490F9CA1671BD35629BD">
 								<Properties>
 									<BinaryString name="AttributesSerialize"></BinaryString>
 									<CoordinateFrame name="CFrame">
@@ -7829,25 +8163,83 @@ toolbarButton.Click:Connect(OnClick)]]></ProtectedString>
 									<string name="Name">Torso</string>
 									<int64 name="SourceAssetId">-1</int64>
 									<BinaryString name="Tags"></BinaryString>
-									<UniqueId name="UniqueId">3d4be88126a9bda0079fa919000080d8</UniqueId>
+									<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a1e</UniqueId>
 									<float name="Weight">0</float>
 								</Properties>
-								<Item class="Pose" referent="RBX79420FBC920546E0B2A65A5A1C043B14">
+								<Item class="Pose" referent="RBX1B1E38179F4C4E3CBE3D027260F003B7">
 									<Properties>
 										<BinaryString name="AttributesSerialize"></BinaryString>
 										<CoordinateFrame name="CFrame">
-											<X>-0.426169634</X>
-											<Y>0.277642012</Y>
-											<Z>0.421041489</Z>
-											<R00>0.169891059</R00>
-											<R01>-0.0406228825</R01>
-											<R02>0.98462534</R02>
-											<R10>-0.98141402</R10>
-											<R11>0.0835052133</R11>
-											<R12>0.172782063</R12>
-											<R20>-0.0892400444</R20>
-											<R21>-0.995679259</R21>
-											<R22>-0.0256807953</R22>
+											<X>0</X>
+											<Y>-2</Y>
+											<Z>2</Z>
+											<R00>1</R00>
+											<R01>0</R01>
+											<R02>0</R02>
+											<R10>0</R10>
+											<R11>1</R11>
+											<R12>0</R12>
+											<R20>0</R20>
+											<R21>0</R21>
+											<R22>1</R22>
+										</CoordinateFrame>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<token name="EasingDirection">0</token>
+										<token name="EasingStyle">0</token>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<string name="Name">Left Leg</string>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a1f</UniqueId>
+										<float name="Weight">1</float>
+									</Properties>
+								</Item>
+								<Item class="Pose" referent="RBX446464668C8F4271B6820159A3A5348B">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<CoordinateFrame name="CFrame">
+											<X>0</X>
+											<Y>0</Y>
+											<Z>3</Z>
+											<R00>1</R00>
+											<R01>0</R01>
+											<R02>0</R02>
+											<R10>0</R10>
+											<R11>1</R11>
+											<R12>0</R12>
+											<R20>0</R20>
+											<R21>0</R21>
+											<R22>1</R22>
+										</CoordinateFrame>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<token name="EasingDirection">0</token>
+										<token name="EasingStyle">0</token>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<string name="Name">Right Arm</string>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a20</UniqueId>
+										<float name="Weight">1</float>
+									</Properties>
+								</Item>
+								<Item class="Pose" referent="RBXE8CC3F38B129412C8FFEF4D7ECCE426E">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<CoordinateFrame name="CFrame">
+											<X>0</X>
+											<Y>0</Y>
+											<Z>3</Z>
+											<R00>1</R00>
+											<R01>0</R01>
+											<R02>0</R02>
+											<R10>0</R10>
+											<R11>1</R11>
+											<R12>0</R12>
+											<R20>0</R20>
+											<R21>0</R21>
+											<R22>1</R22>
 										</CoordinateFrame>
 										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 										<bool name="DefinesCapabilities">false</bool>
@@ -7857,7 +8249,497 @@ toolbarButton.Click:Connect(OnClick)]]></ProtectedString>
 										<string name="Name">Left Arm</string>
 										<int64 name="SourceAssetId">-1</int64>
 										<BinaryString name="Tags"></BinaryString>
-										<UniqueId name="UniqueId">3d4be88126a9bda0079fa919000080d9</UniqueId>
+										<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a21</UniqueId>
+										<float name="Weight">1</float>
+									</Properties>
+								</Item>
+								<Item class="Pose" referent="RBX3F8A09B416A345A7B6A44AFBCE4DF30E">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<CoordinateFrame name="CFrame">
+											<X>0</X>
+											<Y>-2</Y>
+											<Z>2</Z>
+											<R00>1</R00>
+											<R01>0</R01>
+											<R02>0</R02>
+											<R10>0</R10>
+											<R11>1</R11>
+											<R12>0</R12>
+											<R20>0</R20>
+											<R21>0</R21>
+											<R22>1</R22>
+										</CoordinateFrame>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<token name="EasingDirection">0</token>
+										<token name="EasingStyle">0</token>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<string name="Name">Right Leg</string>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a22</UniqueId>
+										<float name="Weight">1</float>
+									</Properties>
+								</Item>
+								<Item class="Pose" referent="RBX40834A5D285F45498072486EF10F1916">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<CoordinateFrame name="CFrame">
+											<X>0</X>
+											<Y>0</Y>
+											<Z>3</Z>
+											<R00>1</R00>
+											<R01>0</R01>
+											<R02>0</R02>
+											<R10>0</R10>
+											<R11>1</R11>
+											<R12>0</R12>
+											<R20>0</R20>
+											<R21>0</R21>
+											<R22>1</R22>
+										</CoordinateFrame>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<token name="EasingDirection">0</token>
+										<token name="EasingStyle">0</token>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<string name="Name">Head</string>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a23</UniqueId>
+										<float name="Weight">1</float>
+									</Properties>
+								</Item>
+							</Item>
+						</Item>
+					</Item>
+					<Item class="Keyframe" referent="RBXEA16DE1FFF1648AF8E64A659A08E2253">
+						<Properties>
+							<BinaryString name="AttributesSerialize"></BinaryString>
+							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+							<bool name="DefinesCapabilities">false</bool>
+							<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+							<string name="Name">Keyframe</string>
+							<int64 name="SourceAssetId">-1</int64>
+							<BinaryString name="Tags"></BinaryString>
+							<float name="Time">0.5</float>
+							<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a24</UniqueId>
+						</Properties>
+						<Item class="Pose" referent="RBX2E2D0744CF5E4ADABE9EE2E47E3F8B47">
+							<Properties>
+								<BinaryString name="AttributesSerialize"></BinaryString>
+								<CoordinateFrame name="CFrame">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+									<R00>1</R00>
+									<R01>0</R01>
+									<R02>0</R02>
+									<R10>0</R10>
+									<R11>1</R11>
+									<R12>0</R12>
+									<R20>0</R20>
+									<R21>0</R21>
+									<R22>1</R22>
+								</CoordinateFrame>
+								<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+								<bool name="DefinesCapabilities">false</bool>
+								<token name="EasingDirection">0</token>
+								<token name="EasingStyle">0</token>
+								<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+								<string name="Name">HumanoidRootPart</string>
+								<int64 name="SourceAssetId">-1</int64>
+								<BinaryString name="Tags"></BinaryString>
+								<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a25</UniqueId>
+								<float name="Weight">0</float>
+							</Properties>
+							<Item class="Pose" referent="RBX568EED076F4F4F84B375526B02F61271">
+								<Properties>
+									<BinaryString name="AttributesSerialize"></BinaryString>
+									<CoordinateFrame name="CFrame">
+										<X>0</X>
+										<Y>0</Y>
+										<Z>0</Z>
+										<R00>1</R00>
+										<R01>0</R01>
+										<R02>0</R02>
+										<R10>0</R10>
+										<R11>1</R11>
+										<R12>0</R12>
+										<R20>0</R20>
+										<R21>0</R21>
+										<R22>1</R22>
+									</CoordinateFrame>
+									<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+									<bool name="DefinesCapabilities">false</bool>
+									<token name="EasingDirection">0</token>
+									<token name="EasingStyle">0</token>
+									<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+									<string name="Name">Torso</string>
+									<int64 name="SourceAssetId">-1</int64>
+									<BinaryString name="Tags"></BinaryString>
+									<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a26</UniqueId>
+									<float name="Weight">0</float>
+								</Properties>
+								<Item class="Pose" referent="RBX46B78A225F9C4577A699B16A1CC030C0">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<CoordinateFrame name="CFrame">
+											<X>0</X>
+											<Y>-2</Y>
+											<Z>0</Z>
+											<R00>1</R00>
+											<R01>0</R01>
+											<R02>0</R02>
+											<R10>0</R10>
+											<R11>1</R11>
+											<R12>0</R12>
+											<R20>0</R20>
+											<R21>0</R21>
+											<R22>1</R22>
+										</CoordinateFrame>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<token name="EasingDirection">0</token>
+										<token name="EasingStyle">0</token>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<string name="Name">Left Leg</string>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a27</UniqueId>
+										<float name="Weight">1</float>
+									</Properties>
+								</Item>
+								<Item class="Pose" referent="RBXF686281928024CDEAEAD026ABE61EF81">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<CoordinateFrame name="CFrame">
+											<X>0</X>
+											<Y>2</Y>
+											<Z>3</Z>
+											<R00>1</R00>
+											<R01>0</R01>
+											<R02>0</R02>
+											<R10>0</R10>
+											<R11>1</R11>
+											<R12>0</R12>
+											<R20>0</R20>
+											<R21>0</R21>
+											<R22>1</R22>
+										</CoordinateFrame>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<token name="EasingDirection">0</token>
+										<token name="EasingStyle">0</token>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<string name="Name">Right Arm</string>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a28</UniqueId>
+										<float name="Weight">1</float>
+									</Properties>
+								</Item>
+								<Item class="Pose" referent="RBX3318E0C492E549AB9C660AB44F35E8D0">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<CoordinateFrame name="CFrame">
+											<X>0</X>
+											<Y>-2</Y>
+											<Z>3</Z>
+											<R00>1</R00>
+											<R01>0</R01>
+											<R02>0</R02>
+											<R10>0</R10>
+											<R11>1</R11>
+											<R12>0</R12>
+											<R20>0</R20>
+											<R21>0</R21>
+											<R22>1</R22>
+										</CoordinateFrame>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<token name="EasingDirection">0</token>
+										<token name="EasingStyle">0</token>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<string name="Name">Left Arm</string>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a29</UniqueId>
+										<float name="Weight">1</float>
+									</Properties>
+								</Item>
+								<Item class="Pose" referent="RBX9307348B9DD44C59AF78BB2FDC06D9FC">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<CoordinateFrame name="CFrame">
+											<X>0</X>
+											<Y>-2</Y>
+											<Z>4</Z>
+											<R00>1</R00>
+											<R01>0</R01>
+											<R02>0</R02>
+											<R10>0</R10>
+											<R11>1</R11>
+											<R12>0</R12>
+											<R20>0</R20>
+											<R21>0</R21>
+											<R22>1</R22>
+										</CoordinateFrame>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<token name="EasingDirection">0</token>
+										<token name="EasingStyle">0</token>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<string name="Name">Right Leg</string>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a2a</UniqueId>
+										<float name="Weight">1</float>
+									</Properties>
+								</Item>
+								<Item class="Pose" referent="RBX3D0D8ACC9A39448AA2D0142F18CE3ADF">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<CoordinateFrame name="CFrame">
+											<X>2</X>
+											<Y>0</Y>
+											<Z>3</Z>
+											<R00>1</R00>
+											<R01>0</R01>
+											<R02>0</R02>
+											<R10>0</R10>
+											<R11>1</R11>
+											<R12>0</R12>
+											<R20>0</R20>
+											<R21>0</R21>
+											<R22>1</R22>
+										</CoordinateFrame>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<token name="EasingDirection">0</token>
+										<token name="EasingStyle">0</token>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<string name="Name">Head</string>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a2b</UniqueId>
+										<float name="Weight">1</float>
+									</Properties>
+								</Item>
+							</Item>
+						</Item>
+					</Item>
+					<Item class="Keyframe" referent="RBX4BD22AD4B9894292B44D9D9F0A4845BF">
+						<Properties>
+							<BinaryString name="AttributesSerialize"></BinaryString>
+							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+							<bool name="DefinesCapabilities">false</bool>
+							<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+							<string name="Name">Keyframe</string>
+							<int64 name="SourceAssetId">-1</int64>
+							<BinaryString name="Tags"></BinaryString>
+							<float name="Time">0.666666687</float>
+							<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a2c</UniqueId>
+						</Properties>
+						<Item class="Pose" referent="RBX9CF4F5DE39C540B7B95820D3C8850B0D">
+							<Properties>
+								<BinaryString name="AttributesSerialize"></BinaryString>
+								<CoordinateFrame name="CFrame">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+									<R00>1</R00>
+									<R01>0</R01>
+									<R02>0</R02>
+									<R10>0</R10>
+									<R11>1</R11>
+									<R12>0</R12>
+									<R20>0</R20>
+									<R21>0</R21>
+									<R22>1</R22>
+								</CoordinateFrame>
+								<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+								<bool name="DefinesCapabilities">false</bool>
+								<token name="EasingDirection">0</token>
+								<token name="EasingStyle">0</token>
+								<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+								<string name="Name">HumanoidRootPart</string>
+								<int64 name="SourceAssetId">-1</int64>
+								<BinaryString name="Tags"></BinaryString>
+								<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a2d</UniqueId>
+								<float name="Weight">0</float>
+							</Properties>
+							<Item class="Pose" referent="RBXBBE7D686F7934EEEA17906313F00AE6E">
+								<Properties>
+									<BinaryString name="AttributesSerialize"></BinaryString>
+									<CoordinateFrame name="CFrame">
+										<X>0</X>
+										<Y>0</Y>
+										<Z>0</Z>
+										<R00>1</R00>
+										<R01>0</R01>
+										<R02>0</R02>
+										<R10>0</R10>
+										<R11>1</R11>
+										<R12>0</R12>
+										<R20>0</R20>
+										<R21>0</R21>
+										<R22>1</R22>
+									</CoordinateFrame>
+									<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+									<bool name="DefinesCapabilities">false</bool>
+									<token name="EasingDirection">0</token>
+									<token name="EasingStyle">0</token>
+									<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+									<string name="Name">Torso</string>
+									<int64 name="SourceAssetId">-1</int64>
+									<BinaryString name="Tags"></BinaryString>
+									<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a2e</UniqueId>
+									<float name="Weight">1</float>
+								</Properties>
+								<Item class="Pose" referent="RBXCAAB2553509D46FA8EFCC8912A577237">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<CoordinateFrame name="CFrame">
+											<X>0</X>
+											<Y>0</Y>
+											<Z>0</Z>
+											<R00>1</R00>
+											<R01>0</R01>
+											<R02>0</R02>
+											<R10>0</R10>
+											<R11>1</R11>
+											<R12>0</R12>
+											<R20>0</R20>
+											<R21>0</R21>
+											<R22>1</R22>
+										</CoordinateFrame>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<token name="EasingDirection">0</token>
+										<token name="EasingStyle">0</token>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<string name="Name">Left Leg</string>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a2f</UniqueId>
+										<float name="Weight">1</float>
+									</Properties>
+								</Item>
+								<Item class="Pose" referent="RBXE72F46E99DBE4DBE9AA2DF4642AF4FA2">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<CoordinateFrame name="CFrame">
+											<X>0</X>
+											<Y>0</Y>
+											<Z>0</Z>
+											<R00>1</R00>
+											<R01>0</R01>
+											<R02>0</R02>
+											<R10>0</R10>
+											<R11>1</R11>
+											<R12>0</R12>
+											<R20>0</R20>
+											<R21>0</R21>
+											<R22>1</R22>
+										</CoordinateFrame>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<token name="EasingDirection">0</token>
+										<token name="EasingStyle">0</token>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<string name="Name">Right Arm</string>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a30</UniqueId>
+										<float name="Weight">1</float>
+									</Properties>
+								</Item>
+								<Item class="Pose" referent="RBXBB8BEA2978474677A87D27415121AEA8">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<CoordinateFrame name="CFrame">
+											<X>0</X>
+											<Y>0</Y>
+											<Z>0</Z>
+											<R00>1</R00>
+											<R01>0</R01>
+											<R02>0</R02>
+											<R10>0</R10>
+											<R11>1</R11>
+											<R12>0</R12>
+											<R20>0</R20>
+											<R21>0</R21>
+											<R22>1</R22>
+										</CoordinateFrame>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<token name="EasingDirection">0</token>
+										<token name="EasingStyle">0</token>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<string name="Name">Left Arm</string>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a31</UniqueId>
+										<float name="Weight">1</float>
+									</Properties>
+								</Item>
+								<Item class="Pose" referent="RBXC83BE4EAAE5F42F9B4001B2349F8E9B8">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<CoordinateFrame name="CFrame">
+											<X>0</X>
+											<Y>0</Y>
+											<Z>0</Z>
+											<R00>1</R00>
+											<R01>0</R01>
+											<R02>0</R02>
+											<R10>0</R10>
+											<R11>1</R11>
+											<R12>0</R12>
+											<R20>0</R20>
+											<R21>0</R21>
+											<R22>1</R22>
+										</CoordinateFrame>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<token name="EasingDirection">0</token>
+										<token name="EasingStyle">0</token>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<string name="Name">Right Leg</string>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a32</UniqueId>
+										<float name="Weight">1</float>
+									</Properties>
+								</Item>
+								<Item class="Pose" referent="RBX57E16B7573A0491489DB154241F12F61">
+									<Properties>
+										<BinaryString name="AttributesSerialize"></BinaryString>
+										<CoordinateFrame name="CFrame">
+											<X>0</X>
+											<Y>0</Y>
+											<Z>0</Z>
+											<R00>1</R00>
+											<R01>0</R01>
+											<R02>0</R02>
+											<R10>0</R10>
+											<R11>1</R11>
+											<R12>0</R12>
+											<R20>0</R20>
+											<R21>0</R21>
+											<R22>1</R22>
+										</CoordinateFrame>
+										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+										<bool name="DefinesCapabilities">false</bool>
+										<token name="EasingDirection">0</token>
+										<token name="EasingStyle">0</token>
+										<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+										<string name="Name">Head</string>
+										<int64 name="SourceAssetId">-1</int64>
+										<BinaryString name="Tags"></BinaryString>
+										<UniqueId name="UniqueId">118744c6fd05a6cf07a8c68100006a33</UniqueId>
 										<float name="Weight">1</float>
 									</Properties>
 								</Item>
